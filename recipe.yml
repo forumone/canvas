@@ -42,3 +42,6 @@ config:
     system.theme:
       simple_config_update:
         default: 'gesso'
+    block.block.gesso_tools:
+      simple_config_update:
+        settings.label_display: false
