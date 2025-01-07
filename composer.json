@@ -1,0 +1,45 @@
+{
+    "name": "coldson/f1_canvas",
+    "description": "Provides baseline Drupal installation typical of all Forum One Drupal projects",
+    "type": "drupal-recipe",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Carson Oldson",
+            "email": "coldson@forumone.com",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "drupal/address": "^2.0",
+        "drupal/better_exposed_filters": "^6.0",
+        "drupal/components": "^3.0",
+        "drupal/csp": "^2.0",
+        "drupal/decorative_image_widget": "^1.0",
+        "drupal/default_content": "^2.0@alpha",
+        "drupal/devel": ">=5.0",
+        "drupal/diff": "^1.0",
+        "drupal/exif_orientation": "^1.4",
+        "drupal/facets": "^2.0",
+        "drupal/fakeobjects": "^1.2",
+        "drupal/google_tag": "^2.0.5 || ^2.0@dev >2.0.4",
+        "drupal/inline_entity_form": "^3.0",
+        "drupal/libraries": "^4.0",
+        "drupal/login_history": "^2.0",
+        "drupal/maxlength": "^3",
+        "drupal/media_library_edit": "^3.0",
+        "drupal/password_policy": "^4",
+        "drupal/rabbit_hole": ">=1.0@beta",
+        "drupal/redirect": ">=1.4",
+        "drupal/search_api": ">=1.14",
+        "drupal/seckit": "^2.0",
+        "drupal/select2": "^1.15",
+        "drupal/simple_sitemap": "^4.0",
+        "drupal/stage_file_proxy": "^2",
+        "drupal/twig_field_value": "^2.0",
+        "drupal/twig_tweak": "^3.1",
+        "drupal/username_enumeration_prevention": ">=1.0",
+        "drupal/webform": "^6.2",
+        "npm-asset/select2": "^4.0"
+    }
+}

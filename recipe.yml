@@ -1,0 +1,60 @@
+name: 'Forum One - Standard Build'
+description: 'Provides default baseline configuration for all standard Drupal build projects.'
+type: 'Site'
+
+recipes:
+  - f1_base
+
+install:
+  - address
+  - better_exposed_filters
+  - components
+  - csp
+  - decorative_image_widget
+  - devel
+  - diff
+  - exif_orientation
+  - facets
+  - fakeobjects
+  - focal_point
+  - gesso
+  - gesso_helper
+  - google_tag
+  - login_history
+  - maxlength
+  - media_library_edit
+  - rabbit_hole
+  - redirect
+  - search_api
+  - seckit
+  - select2
+  - simple_sitemap
+  - stage_file_proxy
+  - twig_field_value
+  - twig_tweak
+  - username_enumeration_prevention
+  - webform
+
+config:
+  import:
+    dblog: '*'
+    redirect: '*'
+    node: '*'
+    media: '*'
+    media_library: '*'
+  actions:
+    block.block.claro_admin:
+      simple_config_update:
+        status: false
+    block.block.claro_branding:
+      simple_config_update:
+        status: false
+    block.block.claro_tools:
+      simple_config_update:
+        status: false
+    node.settings:
+      simple_config_update:
+        use_admin_theme: true
+    system.theme:
+      simple_config_update:
+        default: 'gesso'
