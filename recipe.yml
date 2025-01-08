@@ -36,12 +36,15 @@ install:
   - webform
 
 config:
+  strict: false
   import:
     redirect: '*'
+    webform: '*'
   actions:
     system.theme:
       simple_config_update:
         default: 'gesso'
+    # Temporary until https://github.com/forumone/gesso/pull/924 is merged.
     block.block.gesso_tools:
       simple_config_update:
         settings.label_display: false
