@@ -11,6 +11,7 @@
         }
     ],
     "require": {
+        "coldson/f1_base": "*",
         "drupal/address": "^2.0",
         "drupal/better_exposed_filters": "^6.0",
         "drupal/components": "^3.0",
