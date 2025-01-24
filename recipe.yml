@@ -38,9 +38,22 @@ install:
 config:
   strict: false
   import:
+    # We really only want the view, but apparently block_content expects the field storage to always exist. See @link https://www.drupal.org/project/drupal/issues/3447617
+    block_content:
+      - 'field.storage.block_content.body'
+      - 'views.view.block_content'
     redirect: '*'
+    user:
+      # Bring in the admin view for users.
+      - 'views.view.user_admin_people'
     webform: '*'
   actions:
+    # Set default timezone to New York and prevent users from changing their own timezones.
+    system.date:
+      simpleConfigUpdate:
+        timezone.default: 'America/New_York'
+        timezone.user.configurable: false
+    # Ensure gesso is the default theme.
     system.theme:
       simple_config_update:
         default: 'gesso'
