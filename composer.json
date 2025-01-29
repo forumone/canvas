@@ -1,6 +1,6 @@
 {
-    "name": "forumone/f1_canvas",
-    "description": "Provides baseline Drupal installation typical of all Forum One Drupal projects",
+    "name": "forumone/canvas",
+    "description": "Provides baseline Drupal configuration typical of all Forum One Drupal projects",
     "type": "drupal-recipe",
     "license": "GPL-2.0-or-later",
     "authors": [
@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "forumone/f1_base": "^1.0",
+        "forumone/drupal_base": "^1.0",
         "drupal/address": "^2.0",
         "drupal/better_exposed_filters": "^6.0",
         "drupal/components": "^3.0",
