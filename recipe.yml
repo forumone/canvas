@@ -3,7 +3,7 @@ description: 'Provides default baseline configuration for all standard Drupal bu
 type: 'Site'
 
 recipes:
-  - f1_base
+  - drupal_base
 
 install:
   - address
