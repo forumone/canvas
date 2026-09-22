@@ -13,7 +13,7 @@
     "require": {
         "forumone/drupal_base": "^1.0",
         "drupal/address": "^2.0",
-        "drupal/better_exposed_filters": "^6.0",
+        "drupal/better_exposed_filters": "^6.0 || ^7.0",
         "drupal/components": "^3.0",
         "drupal/csp": "^2.0",
         "drupal/decorative_image_widget": "^1.0",
